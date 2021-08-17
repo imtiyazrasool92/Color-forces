@@ -1,0 +1,20 @@
+{
+    "manifest_version":2,
+    "name":"ColorForces - Code forces extension",
+    "version":"0.1",
+    "description":"",
+    "content_scripts" : [
+        {
+            "matches" : ["https://*.codeforces.com/contest/*"],
+            "js" : ["script.js"]
+        }
+    ],
+    "browser_action" : {
+        "default_icon" : "icon128.png",
+        "default_popup" : "index.html"
+    },
+    "icons": { "16": "icon16.png",
+        "48": "icon48.png",
+       "128": "icon128.png" },
+    "permissions" : ["activeTab"]
+}
